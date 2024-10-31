@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background-color: #222222;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #1e90ff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: sticky;
+    top: 20px;
+    height: max-content;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    color: #66b2ff;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.content ol {
+    margin-left: 20px;
+    color: #b3b3b3;
+}
+
+.content ol li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #ffffff;
+    border-top: 2px solid #1e90ff;
+}
