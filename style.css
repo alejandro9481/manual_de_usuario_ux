@@ -18,13 +18,13 @@ body {
 /* Header */
 .header {
     width: 100%;
-    background-color: #222222;
+    background-color: #1f1f1f; /* Color del header */
     padding: 10px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid #1e90ff;
 }
+
 
 .header .logo {
     display: flex;
@@ -40,6 +40,38 @@ body {
 .header h1 {
     font-size: 24px;
     color: #ffffff;
+}
+
+/* Navigation menu */
+.navigation {
+    width: 100%;
+    background-color: #1f1f1f; /* Fondo de navegación */
+    padding: 10px 0;
+    border-top: 1px solid #1e90ff; /* Botón secundario */
+    border-bottom: 1px solid #1e90ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: #ff6740; /* Color de botones de navegación y links */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #1e90ff; /* Color de botones secundarios al hacer hover */
+    transform: scale(1.1);
 }
 
 /* Container */
