@@ -15,14 +15,19 @@ body {
     align-items: center;
 }
 
-/* Header */
+
+/* Header sticky */
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     width: 100%;
     background-color: #1f1f1f; /* Color del header */
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -47,9 +52,9 @@ body {
     width: 100%;
     background-color: #1f1f1f; /* Fondo de navegación */
     padding: 10px 0;
-    border-top: 1px solid #1e90ff; /* Botón secundario */
-    border-bottom: 1px solid #1e90ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgb(161 121 192); /* Botón secundario */
+    border-bottom: 1px solid rgb(161 121 192);
+    box-shadow: 0 2px 4px rgb(161 121 192);
 }
 
 .navigation ul {
@@ -69,8 +74,14 @@ body {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.navigation ul li a.active {
+    color: rgb(161 121 192); /* Cambia el color del enlace activo */
+    font-weight: bold;
+    border-bottom: 2px solid rgb(161 121 192); /* Opcional: agrega una línea debajo para destacar */
+}
+
 .navigation ul li a:hover {
-    color: #1e90ff; /* Color de botones secundarios al hacer hover */
+    color: rgb(161 121 192); /* Color de botones secundarios al hacer hover */
     transform: scale(1.1);
 }
 
@@ -90,7 +101,7 @@ body {
     border-radius: 8px;
     margin-right: 20px;
     position: sticky;
-    top: 20px;
+    top: 130px;
     height: max-content;
 }
 
@@ -109,12 +120,12 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #1e90ff;
+    color: rgb(161 121 192);
     text-decoration: none;
 }
 
 .sidebar nav ul li a:hover {
-    color: #66b2ff;
+    color: rgb(161 121 132);
 }
 
 /* Content */

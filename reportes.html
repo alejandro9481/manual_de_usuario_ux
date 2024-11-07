@@ -47,6 +47,18 @@
             </nav>
         </aside>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentLocation = window.location.pathname;
+            const menuItems = document.querySelectorAll(".navigation ul li a");
+        
+            menuItems.forEach(item => {
+                if (item.getAttribute("href") === currentLocation) {
+                    item.classList.add("active");
+                }
+            });
+        });
+        </script>
 </body>
 
 </html>
