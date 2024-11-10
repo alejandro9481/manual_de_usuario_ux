@@ -154,12 +154,12 @@ body {
 
 .content p {
     margin-bottom: 10px;
-    color: #cccccc;
+    color: whitesmoke;
 }
 
 .content ol {
     margin-left: 20px;
-    color: #b3b3b3;
+    color: #f3ebeb;
 }
 
 .content ol li {

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario - Reportes</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Manual de Usuario - MangaDex</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
 <body>
@@ -31,34 +31,160 @@
             <h2>Contenidos</h2>
             <nav>
                 <ul>
-                    <li><a href="#seccion1">1. Completa tu perfil</a></li>
-                    <li><a href="#seccion2">2. Configura tus notificaciones</a></li>
-                    <li><a href="#seccion3">3. Descubre cómo enviar mensajes</a></li>
-                    <li><a href="#seccion4">4. Gestiona tus preferencias de lectura</a></li>
-                    <li><a href="#seccion5">5. Participa en la comunidad</a></li>
-                    <li><a href="#seccion6">6. Seguridad de tu cuenta</a></li>
-                    <li><a href="#seccion7">7. Administración de listas de lectura</a></li>
-                    <li><a href="#seccion8">8. Uso de etiquetas y categorías</a></li>
-                    <li><a href="#seccion9">9. Reporta problemas o usuarios</a></li>
-                    <li><a href="#seccion10">10. Personaliza tu experiencia</a></li>
-                    <li><a href="#seccion11">11. Contribuir a la comunidad</a></li>
-                    <li><a href="#seccion12">12. Cómo donar y apoyar MangaDex</a></li>
+                    <li><a href="#library">1. Library - Gestión de Biblioteca Personal</a></li>
+                    <li><a href="#mdlists">2. MDLists - Crear y Administrar Listas de Manga</a></li>
+                    <li><a href="#mygroups">3. My Groups - Participación y Gestión de Grupos</a></li>
                 </ul>
             </nav>
         </aside>
+        <main class="content">
+            <h1>Manual de Usuario - Clasifica tu manga de diferentes maneras</h1>
+            <section id="introduction">
+                <h2>Introducción</h2>
+                <p>Este módulo del manual de usuario tiene como objetivo explicar las funcionalidades principales de
+                    MangaDex relacionadas con la gestión de su biblioteca personal, listas de manga y grupos de
+                    traducción. A través de las funciones <strong>Library</strong>, <strong>MDLists</strong>, y
+                    <strong>My Groups</strong>, podrá organizar sus mangas favoritos, crear listas personalizadas, y
+                    participar activamente en la comunidad de traducción de MangaDex.
+                </p>
+                <p>Estas funcionalidades le permiten a cada lector tener un control completo sobre su experiencia de
+                    lectura, construyendo una biblioteca personal según sus preferencias. Con <strong>Library</strong>,
+                    podrá gestionar los mangas que está leyendo, los que ha completado y aquellos que quiere leer en el
+                    futuro. Las listas de manga, mediante <strong>MDLists</strong>, ofrecen una manera eficiente de
+                    categorizar sus títulos favoritos, mientras que <strong>My Groups</strong> le facilita la
+                    colaboración con otros usuarios en proyectos de traducción.</p>
+                <p>Utilizar estas herramientas le brindará varias ventajas, tales como un mejor seguimiento de su
+                    progreso de lectura, la posibilidad de organizar sus títulos de manera estructurada, y la
+                    oportunidad de contribuir con la comunidad a través de la creación de contenido. Todo esto está
+                    diseñado para hacer que su experiencia en MangaDex sea más personalizada y satisfactoria.</p>
+            </section>
+
+            <section id="library">
+                <h2>1. Library - Gestión de Biblioteca Personal</h2>
+                <p>La función <strong>Library</strong> le permite gestionar su colección personal de mangas en MangaDex.
+                    Siga estos pasos para utilizarla:</p>
+                <h3>Acceder a la biblioteca</h3>
+                <ol>
+                    <li><strong>Acceda a Library(Menu):</strong> Desde el menú lateral izquierdo haciendo clic en
+                        <strong>"Library"</strong>.
+                    </li>
+                    <li><strong>Acceda a Library(Perfil):</strong> Desde el botón al lado superior derecho. Donde
+                        Se encuentra tu imagen de perfil. tienes acceso al módulo
+                        <strong>"Library"</strong>.
+                    </li>
+                </ol>
+                <div style="display: flex; justify-content: center;">
+                    <img src="src/media/images/otra_opcion_modulo.png" width="600" />
+                </div>
+                <h3>Añadir mangas a la biblioteca</h3>
+                <ol>
+                    <li><strong>Buscar manga:</strong> Utilice la barra de búsqueda para encontrar el manga que desea
+                        añadir.</li>
+                    <li><strong>Agregar a la biblioteca:</strong> En la página del manga, haga clic en <strong>"Add To
+                            Library"</strong> para incluirlo en su biblioteca personal.</li>
+                </ol>
+                <div style="display: flex; justify-content: center;">
+                    <img src="src/media/gifts/add_to_library.gif" width="600" />
+                </div>
+
+                <h3>Organizar tu biblioteca</h3>
+                <ol>
+                    <li><strong>Ver mangas organizados:</strong> En la sección Library, puede ver todos los mangas
+                        organizados por categorías como <strong>leído</strong>, <strong>leyendo</strong> y <strong>por
+                            leer</strong>.</li>
+                    <li><strong>Actualizar estado:</strong> Segun el estado en el que se encuentra el manga, podras
+                        verlo clasificado dentro de las categorias:
+                        <strong>leyendo</strong>, <strong>completado</strong> o <strong>abandonado</strong>.
+                    </li>
+                </ol>
+                <div style="display: flex; justify-content: center;">
+                    <img src="src/media/gifts/revision_modulo_lista.gif" width="600" />
+                </div>
+            </section>
+            <section id="mdlists">
+                <h2>1. MDLists - Crear y Administrar Listas de Manga</h2>
+                <p>La función <strong>MDLists</strong> le permite crear y gestionar listas personalizadas de manga en
+                    MangaDex. Siga estos pasos para utilizarla:</p>
+                <h3>Crear una nueva lista de manga</h3>
+                <ol>
+                    <li><strong>Acceda a MDLists:</strong> Desde el menú lateral izquierdo haciendo clic en
+                        <strong>"MDLists"</strong>.
+                    </li>
+                    <li><strong>Crear nueva lista:</strong> Haga clic en <strong>"Nueva lista"</strong> en la sección de
+                        MDLists.</li>
+                    <li><strong>Configurar la lista:</strong>
+                        <ul>
+                            <li><strong>Nombre de la lista:</strong> Ingrese un nombre distintivo para su lista de
+                                manga.</li>
+                            <li><strong>Descripción:</strong> Opcionalmente, agregue una descripción para recordar el
+                                propósito de esta lista.</li>
+                            <li><strong>Privacidad:</strong> Seleccione si desea que la lista sea
+                                <strong>Pública</strong> (visible para otros usuarios) o <strong>Privada</strong>
+                                (visible solo para usted).
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Guardar la lista:</strong> Haga clic en <strong>"Guardar"</strong> para crear la lista.
+                    </li>
+                </ol>
+                <h3>Añadir manga a una lista</h3>
+                <ol>
+                    <li><strong>Seleccione un manga:</strong> Navegue hasta el manga que desee añadir a una lista
+                        personalizada.</li>
+                    <li><strong>Agregar a la lista:</strong> En la página del manga, haga clic en <strong>"Añadir a
+                            MDList"</strong> y elija la lista a la cual desea agregar el título.</li>
+                </ol>
+            </section>
+            <section id="mygroups">
+                <h2>2. My Groups - Participación y Gestión de Grupos</h2>
+                <p>La función <strong>My Groups</strong> permite unirse a grupos de traducción, crear su propio grupo o
+                    gestionar los grupos en los que participa.</p>
+                <h3>Unirse a un grupo existente</h3>
+                <ol>
+                    <li><strong>Acceda a My Groups:</strong> Desde el menú lateral izquierdo haciendo clic en
+                        <strong>"My Groups"</strong>.
+                    </li>
+                    <li><strong>Explorar grupos:</strong> En la página de grupos, puede ver una lista de los grupos
+                        disponibles y leer sus descripciones.</li>
+                    <li><strong>Solicitar unirse:</strong> Si encuentra un grupo de su interés, haga clic en
+                        <strong>"Unirse"</strong> y siga las instrucciones. Algunos grupos pueden requerir la aprobación
+                        del administrador.
+                    </li>
+                </ol>
+                <h3>Crear un grupo nuevo</h3>
+                <ol>
+                    <li><strong>Crear nuevo grupo:</strong> En la sección My Groups, haga clic en <strong>"Crear
+                            grupo"</strong>.</li>
+                    <li><strong>Configurar el grupo:</strong>
+                        <ul>
+                            <li><strong>Nombre del grupo:</strong> Ingrese un nombre único y representativo para su
+                                grupo.</li>
+                            <li><strong>Descripción:</strong> Detalle el objetivo y las actividades del grupo.</li>
+                            <li><strong>Idioma principal:</strong> Seleccione el idioma en el que el grupo trabajará
+                                principalmente.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Establecer reglas y roles:</strong> Configure las reglas del grupo y asigne roles a los
+                        miembros (como administrador o traductor).</li>
+                    <li><strong>Guardar grupo:</strong> Haga clic en <strong>"Crear"</strong> para finalizar la creación
+                        del grupo.</li>
+                </ol>
+                <h3>Administrar un grupo existente</h3>
+                <ol>
+                    <li><strong>Acceder al grupo:</strong> En <strong>My Groups</strong>, seleccione el grupo que desea
+                        administrar.</li>
+                    <li><strong>Modificar la configuración del grupo:</strong> Cambie la descripción, el idioma o las
+                        reglas según sea necesario.</li>
+                    <li><strong>Gestionar miembros:</strong> Invite, promueva o expulse miembros del grupo según las
+                        necesidades del proyecto.</li>
+                </ol>
+            </section>
+
+        </main>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const currentLocation = window.location.pathname;
-            const menuItems = document.querySelectorAll(".navigation ul li a");
-        
-            menuItems.forEach(item => {
-                if (item.getAttribute("href") === currentLocation) {
-                    item.classList.add("active");
-                }
-            });
-        });
-        </script>
+    <footer class="footer">
+        <p>&copy; 2024 MangaDex. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
