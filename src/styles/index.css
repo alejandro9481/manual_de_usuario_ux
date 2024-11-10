@@ -136,6 +136,10 @@ body {
     border-radius: 8px;
 }
 
+.content strong {
+    color: rgb(161 121 192); /* Color de botones secundarios al hacer hover */
+}
+
 .content h1 {
     font-size: 24px;
     color: #ffffff;
