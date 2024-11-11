@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario para MangaDex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manual de Usuario para MangaDex</h1>
+        <p>Guía para el uso de las funcionalidades clave en MangaDex.</p>
+        <nav>
+            <ul>
+                <li><a href="#subir-manga">Subir Manga</a></li>
+                <li><a href="#foro">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="subir-manga">
+        <h2>Cómo Subir Manga en MangaDex</h2>
+        <p>Esta sección cubre cómo subir un manga en MangaDex.</p>
+        <button onclick="mostrarOcultar('contenidoSubirManga')">Ver más</button>
+        <div id="contenidoSubirManga" style="display: none;">
+            <h3>Requisitos previos para Subir Manga</h3>
+            <ul>
+                <li>Pertenecer a un grupo de traducción o crear uno.</li>
+                <li>Cumplir con las normas de la comunidad.</li>
+            </ul>
+            <h3>Pasos para Subir Manga</h3>
+            <ol>
+                <li>Inicia sesión en MangaDex.</li>
+                <li>Accede a tu grupo de traducción.</li>
+                <li>Busca la opción de "Upload Chapter".</li>
+                <li>Completa el formulario de subida.</li>
+                <li>Revisa y confirma para finalizar la subida.</li>
+            </ol>
+            <img src="ruta/subir_manga.png" alt="Instrucción de subida de manga">
+        </div>
+    </section>
+
+    <section id="foro">
+        <h2>Uso del Foro en MangaDex</h2>
+        <p>Guía para participar en el foro, crear temas y responder.</p>
+        <button onclick="mostrarOcultar('contenidoForo')">Ver más</button>
+        <div id="contenidoForo" style="display: none;">
+            <h3>Navegación y Participación en el Foro</h3>
+            <ol>
+                <li>Accede a la sección de "Foros" en la página principal.</li>
+                <li>Busca temas de tu interés o crea uno nuevo.</li>
+                <li>Respeta las normas de la comunidad en tus respuestas.</li>
+            </ol>
+            <img src="ruta/foro_mangadex.png" alt="Ejemplo de foro">
+        </div>
+    </section>
+
+    <footer>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Ir al inicio</button>
+    </footer>
+
+    <script>
+        function mostrarOcultar(id) {
+            const elemento = document.getElementById(id);
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
