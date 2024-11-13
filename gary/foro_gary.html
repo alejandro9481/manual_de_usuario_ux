@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Foro</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://mangadex.org/img/brand/mangadex-logo.svg" alt="Logo de MangaDex">
+            <h1>MangaDex - Manual de Usuario</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="subir_manga.html">Cómo subir manga</a></li>
+                <li><a href="busquedas_filtros.html">Búsquedas y filtros avanzados</a></li>
+                <li><a href="creacion_listas.html">Creación de listas</a></li>
+                <li><a href="administracion_contenidos.html">Administración de contenidos</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a class="active" href="foro.html">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Contenidos</h2>
+            <nav>
+                <ul>
+                    <li><a href="#navegacion">Navegación y Estructura del Foro</a></li>
+                    <li><a href="#crear-tema">Cómo Crear un Nuevo Tema</a></li>
+                    <li><a href="#participar">Participación en Discusiones</a></li>
+                    <li><a href="#normas">Normas y Buenas Prácticas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h1>Foro de MangaDex</h1>
+
+            <section id="navegacion">
+                <h2>Navegación y Estructura del Foro</h2>
+                <p>El foro de MangaDex está organizado en categorías como <strong>Discusiones de Series</strong>, <strong>Reclutamiento</strong>, <strong>Proyectos de la Comunidad</strong>, y más. Cada categoría contiene hilos específicos relacionados con el tema. Puedes acceder al foro desde la barra de navegación en la página principal de MangaDex.</p>
+                <ul>
+                    <li><strong>Series Discussions:</strong> Espacio para debatir sobre mangas específicos, incluyendo opiniones y teorías.</li>
+                    <li><strong>Recruitment:</strong> Categoría para grupos de traducción que buscan miembros o colaboradores.</li>
+                    <li><strong>Community Projects:</strong> Área para discutir proyectos externos relacionados con MangaDex.</li>
+                </ul>
+            </section>
+
+            <section id="crear-tema">
+                <h2>Cómo Crear un Nuevo Tema</h2>
+                <ol>
+                    <li>Ve a la categoría apropiada en el foro (por ejemplo, <strong>Series Discussions</strong> para hablar de un manga en particular).</li>
+                    <li>Haz clic en el botón <strong>"New Thread"</strong> para iniciar un tema nuevo.</li>
+                    <li>Completa el título del tema con una descripción clara. Ejemplo: "Opiniones sobre el final de [Nombre del Manga]".</li>
+                    <li>En el cuerpo del mensaje, explica tu punto o pregunta de manera detallada. Puedes utilizar herramientas de formato como negritas, listas, o insertar imágenes usando códigos BB.</li>
+                    <li>Revisa el tema y haz clic en <strong>Post Thread</strong> para publicar.</li>
+                </ol>
+                <p>Recuerda elegir un título que resuma tu tema y utilizar etiquetas de spoilers cuando discutas partes críticas de la historia.</p>
+            </section>
+
+            <section id="participar">
+                <h2>Participación en Discusiones</h2>
+                <p>Para participar en un tema existente:</p>
+                <ol>
+                    <li>Selecciona un tema en el foro para ver la discusión.</li>
+                    <li>Para responder, usa el cuadro de respuesta rápida o selecciona <strong>"Reply"</strong> en una publicación específica.</li>
+                    <li>Puedes citar mensajes anteriores seleccionando el botón <strong>Quote</strong> para dar contexto a tu respuesta.</li>
+                    <li>Usa etiquetas de spoilers cuando compartas información clave sobre la historia para respetar a otros usuarios.</li>
+                </ol>
+                <p>Además, el foro permite añadir reacciones a los mensajes, similar a un "Me gusta", para expresar acuerdo o aprecio sin necesidad de una respuesta completa.</p>
+            </section>
+
+            <section id="normas">
+                <h2>Normas y Buenas Prácticas</h2>
+                <ul>
+                    <li><strong>Respeto y Tolerancia:</strong> Evita lenguaje ofensivo y respeta las opiniones de otros usuarios.</li>
+                    <li><strong>Uso de Spoilers:</strong> Usa la etiqueta de spoiler para contenido clave de la trama y evita arruinar la experiencia de lectura de otros.</li>
+                    <li><strong>No Publicidad:</strong> No se permite la publicidad o enlaces de afiliados sin permiso.</li>
+                    <li><strong>Reportes:</strong> Si encuentras contenido inapropiado o spam, usa la opción de reporte para que el equipo de moderación lo revise.</li>
+                </ul>
+                <p>El foro de MangaDex tiene moderadores que supervisan el contenido y ayudan a mantener un ambiente seguro y amigable. Cumplir con estas normas fomenta una comunidad respetuosa y agradable para todos.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MangaDex. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentLocation = window.location.pathname;
+            const menuItems = document.querySelectorAll(".navigation ul li a");
+        
+            menuItems.forEach(item => {
+                if (item.getAttribute("href") === currentLocation) {
+                    item.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
