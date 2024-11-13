@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario - Reportes</title>
+    <title>Manual de Usuario - Cómo Subir Manga</title>
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
@@ -17,7 +17,7 @@
         <nav class="navigation">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="subir_manga.html">Cómo subir manga</a></li>
+                <li><a class="active" href="subir_manga.html">Cómo subir manga</a></li>
                 <li><a href="busquedas_filtros.html">Búsquedas y filtros avanzados</a></li>
                 <li><a href="creacion_listas.html">Creación de listas</a></li>
                 <li><a href="administracion_contenidos.html">Administración de contenidos</a></li>
@@ -26,27 +26,69 @@
             </ul>
         </nav>
     </header>
+    
     <div class="container">
         <aside class="sidebar">
             <h2>Contenidos</h2>
             <nav>
                 <ul>
-                    <li><a href="#seccion1">1. Completa tu perfil</a></li>
-                    <li><a href="#seccion2">2. Configura tus notificaciones</a></li>
-                    <li><a href="#seccion3">3. Descubre cómo enviar mensajes</a></li>
-                    <li><a href="#seccion4">4. Gestiona tus preferencias de lectura</a></li>
-                    <li><a href="#seccion5">5. Participa en la comunidad</a></li>
-                    <li><a href="#seccion6">6. Seguridad de tu cuenta</a></li>
-                    <li><a href="#seccion7">7. Administración de listas de lectura</a></li>
-                    <li><a href="#seccion8">8. Uso de etiquetas y categorías</a></li>
-                    <li><a href="#seccion9">9. Reporta problemas o usuarios</a></li>
-                    <li><a href="#seccion10">10. Personaliza tu experiencia</a></li>
-                    <li><a href="#seccion11">11. Contribuir a la comunidad</a></li>
-                    <li><a href="#seccion12">12. Cómo donar y apoyar MangaDex</a></li>
+                    <li><a href="#requisitos">Requisitos previos</a></li>
+                    <li><a href="#pasos">Pasos para Subir Manga</a></li>
+                    <li><a href="#detalles">Detalles y Reglas de Subida</a></li>
                 </ul>
             </nav>
         </aside>
+        
+        <main class="content">
+            <h1>Cómo Subir Manga</h1>
+            
+            <section id="requisitos">
+                <h2>Requisitos previos para Subir Manga</h2>
+                <p>Antes de subir un manga, asegúrate de cumplir con estos requisitos:</p>
+                <ul>
+                    <li>Ser miembro de un grupo de traducción en MangaDex o crear uno propio.</li>
+                    <li>Cumplir con las normas sobre el tipo de contenido permitido para evitar infracciones.</li>
+                    <li>Verificar que el capítulo no viole derechos de autor y que respete la política de MangaDex.</li>
+                </ul>
+            </section>
+
+            <section id="pasos">
+                <h2>Pasos para Subir un Capítulo de Manga</h2>
+                <ol>
+                    <li>Inicia sesión en tu cuenta de MangaDex y dirígete a la serie en la que deseas subir el capítulo.</li>
+                    <li>Haz clic en el botón <strong>"Upload Chapter"</strong> para iniciar el proceso de subida.</li>
+                    <li>Selecciona tu grupo de traducción o marca la opción "No afiliado a ningún grupo" si subes el capítulo de forma independiente.</li>
+                    <li>Rellena los datos del capítulo:
+                        <ul>
+                            <li><strong>Idioma:</strong> selecciona el idioma del capítulo.</li>
+                            <li><strong>Número de Volumen y Capítulo:</strong> asegúrate de introducirlos correctamente.</li>
+                            <li><strong>Título del Capítulo:</strong> opcionalmente, puedes incluir un título descriptivo.</li>
+                            <li><strong>One-shot:</strong> marca esta opción solo si es un capítulo único.</li>
+                        </ul>
+                    </li>
+                    <li>Sube las imágenes arrastrando los archivos o seleccionándolos desde tu dispositivo. MangaDex admite formatos de imagen como JPEG y PNG.</li>
+                    <li>Revisa todos los datos y haz clic en <strong>"Upload"</strong> para publicar el capítulo.</li>
+                </ol>
+            </section>
+
+            <section id="detalles">
+                <h2>Detalles y Reglas de Subida</h2>
+                <p>Para asegurar la calidad y cumplimiento, considera las siguientes reglas:</p>
+                <ul>
+                    <li>No subas contenido oficial sin permiso ni material que no sea traducción.</li>
+                    <li>Los capítulos deben mantener la estructura original (sin combinaciones o divisiones arbitrarias).</li>
+                    <li>Las páginas adicionales (como créditos o fan arts) deben colocarse al inicio o final del capítulo.</li>
+                    <li>No uses el nombre del capítulo para añadir etiquetas innecesarias como "HQ" o "v2".</li>
+                </ul>
+                <p>Al publicar un capítulo, este puede necesitar aprobación del equipo de MangaDex. Este proceso tarda entre 24 y 48 horas, especialmente si es la primera vez que subes contenido.</p>
+            </section>
+        </main>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MangaDex. Todos los derechos reservados.</p>
+    </footer>
+    
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const currentLocation = window.location.pathname;
@@ -58,7 +100,7 @@
                 }
             });
         });
-        </script>
+    </script>
 </body>
 
 </html>
