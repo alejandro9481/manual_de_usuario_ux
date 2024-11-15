@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Búsquedas y Filtros Avanzados</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://mangadex.org/img/brand/mangadex-logo.svg" alt="Logo de MangaDex">
+            <h1>MangaDex - Manual de Usuario</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="subir_manga.html">Cómo subir manga</a></li>
+                <li><a class="active" href="busquedas_filtros.html">Búsquedas y filtros avanzados</a></li>
+                <li><a href="creacion_listas.html">Creación de listas</a></li>
+                <li><a href="administracion_contenidos.html">Administración de contenidos</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a href="foro.html">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Contenidos</h2>
+            <nav>
+                <ul>
+                    <li><a href="#navegacion">Navegación en la Búsqueda</a></li>
+                    <li><a href="#filtros">Uso de Filtros Avanzados</a></li>
+                    <li><a href="#consejos">Consejos para Optimizar Búsquedas</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content">
+            <h1>Búsquedas y Filtros Avanzados</h1>
+
+            <section id="navegacion">
+                <h2>Navegación en la Búsqueda</h2>
+                <p>La barra de búsqueda avanzada de MangaDex te permite encontrar mangas específicos utilizando palabras clave o atributos detallados. Se encuentra en la parte superior de la página principal.</p>
+                <ol>
+                    <li>Escribe el título, autor o tag que buscas en el campo de texto.</li>
+                    <li>Haz clic en el botón de búsqueda o presiona <strong>Enter</strong>.</li>
+                    <li>Utiliza las opciones de filtrado en el lado derecho para restringir los resultados.</li>
+                </ol>
+            </section>
+
+            <section id="filtros">
+                <h2>Uso de Filtros Avanzados</h2>
+                <p>MangaDex cuenta con un sistema robusto de filtros para personalizar los resultados de búsqueda:</p>
+                <ul>
+                    <li><strong>Idioma del capítulo:</strong> Muestra solo mangas en el idioma seleccionado.</li>
+                    <li><strong>Demografía:</strong> Clasifica mangas según la audiencia (Shonen, Seinen, etc.).</li>
+                    <li><strong>Estado de publicación:</strong> Permite buscar mangas completos, en curso o pausados.</li>
+                    <li><strong>Filtros de contenido:</strong> Oculta contenido explícito o restringido según tus preferencias.</li>
+                    <li><strong>Etiquetas:</strong> Incluye o excluye géneros como acción, romance, etc.</li>
+                </ul>
+                <p>Para acceder a los filtros, haz clic en <strong>"Advanced Search"</strong> debajo de la barra principal de búsqueda.</p>
+            </section>
+
+            <section id="consejos">
+                <h2>Consejos para Optimizar Búsquedas</h2>
+                <p>Estos consejos te ayudarán a aprovechar al máximo las herramientas de búsqueda de MangaDex:</p>
+                <ul>
+                    <li>Usa varias etiquetas para afinar tus resultados. Ejemplo: Acción + Comedia.</li>
+                    <li>Ordena los resultados por <strong>"Mejor coincidencia"</strong> o <strong>"Fecha de actualización"</strong> según tus necesidades.</li>
+                    <li>Guarda tus búsquedas favoritas utilizando la opción de marcadores.</li>
+                    <li>Configura tus preferencias en la sección de <strong>Filtros de usuario</strong> para búsquedas más rápidas.</li>
+                </ul>
+                <p>Con estas herramientas, puedes encontrar mangas que coincidan con tus intereses de manera rápida y eficiente.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 MangaDex. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentLocation = window.location.pathname;
+            const menuItems = document.querySelectorAll(".navigation ul li a");
+        
+            menuItems.forEach(item => {
+                if (item.getAttribute("href") === currentLocation) {
+                    item.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
