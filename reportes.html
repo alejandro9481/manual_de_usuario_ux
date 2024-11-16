@@ -16,7 +16,7 @@
         </div>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="index.html">Inicio</a></li>
                 <li><a href="subir_manga.html">Cómo subir manga</a></li>
                 <li><a href="busquedas_filtros.html">Búsquedas y filtros avanzados</a></li>
                 <li><a href="creacion_listas.html">Creación de listas</a></li>
@@ -31,34 +31,83 @@
             <h2>Contenidos</h2>
             <nav>
                 <ul>
-                    <li><a href="#seccion1">1. Completa tu perfil</a></li>
-                    <li><a href="#seccion2">2. Configura tus notificaciones</a></li>
-                    <li><a href="#seccion3">3. Descubre cómo enviar mensajes</a></li>
-                    <li><a href="#seccion4">4. Gestiona tus preferencias de lectura</a></li>
-                    <li><a href="#seccion5">5. Participa en la comunidad</a></li>
-                    <li><a href="#seccion6">6. Seguridad de tu cuenta</a></li>
-                    <li><a href="#seccion7">7. Administración de listas de lectura</a></li>
-                    <li><a href="#seccion8">8. Uso de etiquetas y categorías</a></li>
-                    <li><a href="#seccion9">9. Reporta problemas o usuarios</a></li>
-                    <li><a href="#seccion10">10. Personaliza tu experiencia</a></li>
-                    <li><a href="#seccion11">11. Contribuir a la comunidad</a></li>
-                    <li><a href="#seccion12">12. Cómo donar y apoyar MangaDex</a></li>
+                    <li><a href="#seccion1">1. Cómo Reportar Usuarios o Contenidos</a></li>
                 </ul>
             </nav>
         </aside>
+        <main class="content">
+            <h1>Manual de Usuario - Reportes</h1>
+            <section id="introduction">
+                <h2>Introducción</h2>
+                <p>Este módulo del manual de usuario tiene la función de reportes que está diseñada para ayudar a
+                    mantener la comunidad segura y libre de contenido inapropiado o de comportamiento abusivo.
+                    Utilizando esta herramienta, podrá notificar al equipo de moderación sobre cualquier problema que
+                    encuentre, asegurando así una experiencia más agradable para todos los usuarios de la plataforma.
+                </p>
+            </section>
+            <section id="seccion1">
+                <h2>1. Cómo Reportar Usuarios o Contenidos</h2>
+                <p>La funcionalidad de reportes en MangaDex le permite a los usuarios denunciar comportamientos
+                    inapropiados o contenido que incumpla con las normas de la comunidad. Siga estos pasos para realizar
+                    un reporte de manera efectiva:</p>
+                <h3>Acceder a la Función de Reporte</h3>
+                <ol>
+                    <li><strong>Acceda a su Perfil:</strong> Haga clic en su avatar en la esquina superior derecha de la
+                        página y seleccione <strong>"My Profile"</strong>.</li>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="src/media/images/otra_opcion_modulo.png" width="600" />
+                    </div><br>
+                    <li><strong>Acceda a Reportes:</strong> En la página de perfil del usuario, busque y haga clic en el
+                        botón <strong>"Reports"</strong>.</li>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="src/media/images/acceder_reportes.png" width="600" />
+                    </div><br>
+                </ol>
+                <h3>Completar el Formulario de Reporte</h3>
+                <ol>
+                    <li><strong>Razón del Reporte:</strong> Seleccione la razón para el reporte desde el menú
+                        desplegable. Las opciones incluyen <strong>contenido inapropiado, comportamiento abusivo,
+                            spam</strong>, entre otros.</li>
+                    <li><strong>Explicación Adicional:</strong> Proporcione detalles adicionales sobre el problema en el
+                        campo de <strong>"Explicación Adicional"</strong> para ayudar al equipo de moderación a entender
+                        la situación.</li>
+                    <li><strong>Enviar el Reporte:</strong> Una vez completado el formulario, haga clic en el botón
+                        <strong>"Enviar Reporte"</strong> para que el equipo de moderación lo revise.
+                    </li>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="src/media/gifts/crear_reporte.gif" width="600" />
+                    </div>
+                </ol>
+                <h3>Proceso de Revisión</h3>
+                <p>Una vez que haya enviado su reporte, el equipo de moderación de MangaDex revisará la información
+                    proporcionada. Dependiendo de la gravedad del problema, la respuesta puede variar, pero en general,
+                    el equipo se encargará de analizar el caso y tomar las medidas necesarias.</p>
+                <h3>Consejos para Realizar un Reporte</h3>
+                <ol>
+                    <li><strong>Sea Claro y Conciso:</strong> Al explicar la razón de su reporte, asegúrese de
+                        proporcionar información relevante que pueda ayudar al equipo de moderación a tomar una decisión
+                        informada.</li>
+                    <li><strong>No Use la Función de Reporte de Forma Abusiva:</strong> Reportar falsamente a usuarios o
+                        contenido puede resultar en restricciones para su cuenta.</li>
+                    <li><strong>Solo Reporte Contenidos que Incumplan las Normas:</strong> Consulte las <strong>Normas
+                            de la Comunidad</strong> para asegurarse de que el contenido realmente infringe las reglas
+                        antes de reportarlo.</li>
+                </ol>
+            </section>
+        </main>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const currentLocation = window.location.pathname;
             const menuItems = document.querySelectorAll(".navigation ul li a");
-        
+
             menuItems.forEach(item => {
                 if (item.getAttribute("href") === currentLocation) {
                     item.classList.add("active");
                 }
             });
         });
-        </script>
+    </script>
 </body>
 
 </html>
