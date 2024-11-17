@@ -19,7 +19,7 @@
                 <li><a class="active" class="active" href="index.html">Inicio</a></li>
                 <li><a href="busquedas_filtros.html">Búsquedas y filtros avanzados</a></li>
                 <li><a href="administracion_contenidos.html">Administración de contenidos</a></li>
-                <li><a href="reportes.html">Reportes</a></li>
+                <li><a class="active" href="reportes.html">Reportes</a></li>
                 <li><a href="foro.html">Foro</a></li>
                 <li><a href="subir_manga.html">Cómo subir manga</a></li>
             </ul>
@@ -58,13 +58,14 @@
                 <ol>
                     <li><strong>Acceda a su Perfil:</strong> Haga clic en su avatar en la esquina superior derecha de la
                         página y seleccione <strong>"My Profile"</strong>.</li>
-                    <div style="display: flex; justify-content: center;">
-                        <img src="src/media/images/otra_opcion_modulo.png" width="600" />
-                    </div><br>
+                    <div class="image_custom">
+                        <img src="src/media/images/otra_opcion_modulo.png" width="1000" />
+                    </div>
+                    <br>
                     <li><strong>Acceda a Reportes:</strong> En la página de perfil del usuario, busque y haga clic en el
                         botón <strong>"Reports"</strong>.</li>
-                    <div style="display: flex; justify-content: center;">
-                        <img src="src/media/images/acceder_reportes.png" width="600" />
+                    <div class="image_custom" >
+                        <img src="src/media/images/acceder_reportes.png" width="1000" />
                     </div><br>
                 </ol>
                 <h3>Completar el Formulario de Reporte</h3>
@@ -78,8 +79,8 @@
                     <li><strong>Enviar el Reporte:</strong> Una vez completado el formulario, haga clic en el botón
                         <strong>"Enviar Reporte"</strong> para que el equipo de moderación lo revise.
                     </li>
-                    <div style="display: flex; justify-content: center;">
-                        <img src="src/media/gifts/crear_reporte.gif" width="600" />
+                    <div class="image_custom">
+                        <img src="src/media/gifts/crear_reporte.gif" width="1000" />
                     </div>
                 </ol>
                 <h3>Proceso de Revisión</h3>
@@ -165,7 +166,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             const currentLocation = window.location.pathname;
             const menuItems = document.querySelectorAll(".navigation ul li a");
-
+        
             menuItems.forEach(item => {
                 if (item.getAttribute("href") === currentLocation) {
                     item.classList.add("active");
